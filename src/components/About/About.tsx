@@ -21,33 +21,42 @@ import {Fade} from "react-awesome-reveal";
 export function About() {
   return (
     <Container id="about">
+      <div className="about-image">
+        <div className="aboutpage-image-container">
+          <div className="aboutpage-image-wrapper">
+            <Fade direction="left" delay={210} triggerOnce={false}>
+              <img src={jossy} alt="jossy" />
+            </Fade>
+          </div>
+        </div>
+      </div>
       <div className="about-text">
-        <Fade direction="left" triggerOnce={false}>
+        <Fade direction="right" triggerOnce={false}>
           <h2>About me</h2>
         </Fade>
-        <Fade direction="left" delay={100} triggerOnce={false}>
+        <Fade direction="right" delay={100} triggerOnce={false}>
           <p>
             Hi there! I'm Yossief, an enthusiastic Software Engineer skilled in web development, machine learning, and Mechanical Product Design Engineer
           </p>
         </Fade>
-        <Fade direction="left" delay={200} triggerOnce={false}>
+        <Fade direction="right" delay={200} triggerOnce={false}>
           <p>
             I build responsive web applications, fine-tune ML models, and design robust and efficient systems that push technological boundaries.
           </p>
         </Fade>
-        <Fade direction="left" delay={300} triggerOnce={false}>
+        <Fade direction="right" delay={300} triggerOnce={false}>
           <p>
             And also I have dedication to innovation, craftsmanship, and sustainable engineering, merging functionality with aesthetics to inspire and captivate.
           </p>
         </Fade>
-        <Fade direction="left" delay={400} triggerOnce={false}>
+        <Fade direction="right" delay={400} triggerOnce={false}>
           <div className="education">
             <h3>Education:</h3>
             <h4> Bachelor of Mechanical Engineering and self-taught software developer.</h4>
             <p>Addis Ababa University, Addis Ababa| July 2022 - Present</p>
           </div>
         </Fade>
-        <Fade direction="left" delay={550} triggerOnce={false}>
+        <Fade direction="right" delay={550} triggerOnce={false}>
           <div className="experience">
             <h3>Experience:</h3>
             <h4>Mechanical Design Engineer</h4>
@@ -57,7 +66,7 @@ export function About() {
             <p>Addis Ababa, Ethiopia</p>
           </div>
         </Fade>
-        <Fade direction="left" delay={400} triggerOnce={false}>
+        <Fade direction="right" delay={400} triggerOnce={false}>
           <h3>Here are my main skills:</h3>
         </Fade>
 
@@ -145,15 +154,7 @@ export function About() {
         </div>
       </div>
 
-      <div className="about-image">
-        <div className="aboutpage-image-container">
-          <div className="aboutpage-image-wrapper">
-            <Fade direction="right" delay={210} triggerOnce={false}>
-              <img src={jossy} alt="jossy" />
-            </Fade>
-          </div>
-        </div>
-      </div>
+      
     </Container>
   );
 }
